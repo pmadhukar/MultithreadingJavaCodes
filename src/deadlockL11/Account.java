@@ -20,7 +20,7 @@ public class Account {
 		return balance;
 	}
 
-	public void transfer(Account acc1, Account acc2, double amount){
+	public static void transfer(Account acc1, Account acc2, double amount){
 		acc1.withdraw(amount);
 		acc2.deposit(amount);
 	}
