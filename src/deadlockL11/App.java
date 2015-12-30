@@ -9,7 +9,11 @@ public class App {
 
 			@Override
 			public void run() {
-				runner.firstThread();
+				try {
+					runner.firstThread();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 
@@ -17,7 +21,11 @@ public class App {
 
 			@Override
 			public void run() {
-				runner.secondThread();
+				try {
+					runner.secondThread();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 
