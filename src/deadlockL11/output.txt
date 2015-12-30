@@ -1,0 +1,7 @@
+/*
+ * If threads were synched then Total balance should have been 20000
+ * Because account1 and account2 had 10000 each initially
+ */
+Account1 balance: 8634.0
+Account2 balance: 11587.0
+Total balance: 20221.0
